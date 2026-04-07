@@ -2,7 +2,7 @@
 
 A Cantonese adaptation of [Xiehanzi](https://github.com/krmanik/Anki-xiehanzi) — a web app that generates Anki decks for practising Chinese character writing, adapted for **Cantonese** with Jyutping romanisation and Cantonese text-to-speech.
 
-**Live app:** https://www.perplexity.ai/computer/a/cantonese-xiehanzi-bYC.icAqTGy4h.zWnoy9YQ
+**Live app:** https://joistad.github.io/cantonese-xiehanzi/
 
 ---
 
