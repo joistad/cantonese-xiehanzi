@@ -973,6 +973,7 @@ body {
   border-radius: 0 0 var(--radius) var(--radius);
   display: none;
   padding: 1rem;
+  background: var(--bg-primary);
 }
 
 .accordion-panel.open { display: block; }
