@@ -1,8 +1,10 @@
-# 寫粵字 Cantonese Xiehanzi
+# Cantonese Writer
 
-A Cantonese adaptation of [Xiehanzi](https://github.com/krmanik/Anki-xiehanzi) — a web app that generates Anki decks for practising Chinese character writing, adapted for **Cantonese** with Jyutping romanisation and Cantonese text-to-speech.
+Create Anki flashcard decks for learning Cantonese — stroke-order writing practice, Jyutping, Traditional characters, and native TTS audio.
 
-**Live app:** https://joistad.github.io/cantonese-xiehanzi/
+A Cantonese adaptation of [Anki-xiehanzi](https://github.com/krmanik/Anki-xiehanzi).
+
+**Live app:** https://joistad.github.io/cantonese-writer/
 
 ---
 
@@ -10,23 +12,20 @@ A Cantonese adaptation of [Xiehanzi](https://github.com/krmanik/Anki-xiehanzi) �
 
 - Look up Cantonese vocabulary from a built-in dictionary (CC-CEDICT + CantoJpMin)
 - See Traditional Chinese characters with **Jyutping** romanisation and English definitions
-- Export an Anki `.apkg` deck using the **Anki-xiehanzi** note type
+- Export an Anki `.apkg` deck using the **Cantonese Writer** note type
 - Cards include a **HanziWriter stroke-order practice field** — draw the character on screen and get it graded stroke by stroke
-- Optional **Cantonese audio** (Hong Kong neural voice via Edge TTS)
+- Optional **Cantonese audio** via Google Cloud TTS (Hong Kong yue-HK voice — genuine Cantonese, not Mandarin)
 - Tone colours follow the 6-tone Cantonese system
 
 ---
 
 ## How to use
 
-1. Open the [live app](https://joistad.github.io/cantonese-xiehanzi/)
-2. Search for a Cantonese word or character
-3. Add words to your deck
-4. Configure card options (Writing Component, Audio, Front side fields)
-5. Click **Generate Deck** — downloads a `.apkg` file
-6. Import the file into Anki
-
-The cards use the `Cantonese-xiehanzi` note type (based on `Basic - (Anki-xiehanzi)`). If you already use the original Xiehanzi note type, the layout and functionality will be familiar.
+1. Open the [live app](https://joistad.github.io/cantonese-writer/)
+2. Configure your deck (card layout, audio settings)
+3. Add the characters you want to learn
+4. Click **Generate Deck** — downloads a `.apkg` file
+5. Import the file into Anki
 
 ---
 
@@ -45,7 +44,7 @@ The cards use the `Cantonese-xiehanzi` note type (based on `Basic - (Anki-xiehan
 
 ## Notes on character coverage
 
-HanziWriter stroke data comes from [hanzi-writer-data](https://github.com/chanind/hanzi-writer-data), which covers ~9,500 characters from Standard Chinese. A small number of **exclusively written-Cantonese characters** (e.g. 佢, 喺, 嘅, 咗) are not in that dataset and will not show a stroke-order practice field. All other characters work normally.
+HanziWriter stroke data comes from [hanzi-writer-data](https://github.com/chanind/hanzi-writer-data), which covers ~9,500 characters from Standard Chinese. A small number of **exclusively written-Cantonese characters** (e.g. 佢, 喺, 嘅, 咗) are not in that dataset — these show a graceful fallback message instead of a blank field. All other characters work normally.
 
 ---
 
@@ -56,7 +55,7 @@ HanziWriter stroke data comes from [hanzi-writer-data](https://github.com/chanin
 - [HanziWriter](https://hanziwriter.org/) for stroke-order animation and quiz
 - [CantoJpMin](https://github.com/hanleyweng/CantoJpMin) for Jyutping lookup
 - [CC-CEDICT](https://cc-cedict.org/) as the base dictionary
-- [edge-tts-universal](https://github.com/nicholasgasior/edge-tts-universal) for Cantonese TTS (zh-HK-HiuGaaiNeural)
+- Google Cloud TTS (yue-HK-Standard-A) for Cantonese audio
 - [Anki Persistence](https://github.com/SimonLammer/anki-persistence) embedded in card templates
 
 ---
