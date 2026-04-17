@@ -209,6 +209,14 @@
           </p>
           <div class="file-input-wrapper">
             <input type="file" id="file-input" accept=".txt,.csv,.tsv">
+            <label for="file-input" class="file-input-btn">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75" width="15" height="15" aria-hidden="true">
+                <path d="M10 13V4M6 8l4-4 4 4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 15v1a2 2 0 002 2h10a2 2 0 002-2v-1" stroke-linecap="round"/>
+              </svg>
+              Choose file
+            </label>
+            <span class="file-input-name" id="file-input-name">No file chosen</span>
           </div>
           <button class="btn btn-primary" id="btn-add-file" style="margin-top:0.5rem;">Process File</button>
         </div>

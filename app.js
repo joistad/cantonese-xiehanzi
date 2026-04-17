@@ -280,6 +280,11 @@
     document.getElementById('file-input-area').style.display      = mode === 'file'      ? '' : 'none';
   });
 
+  document.getElementById('file-input').addEventListener('change', function() {
+    const nameEl = document.getElementById('file-input-name');
+    if (nameEl) nameEl.textContent = this.files[0] ? this.files[0].name : 'No file chosen';
+  });
+
   // ===== Add Characters =====
   async function addWord(word) {
     word = word.trim();
@@ -356,6 +361,8 @@
     const words = CantoneseDict.extractChineseWords(text);
     await addWords([...new Set(words)]);
     fileInput.value = '';
+    const nameEl = document.getElementById('file-input-name');
+    if (nameEl) nameEl.textContent = 'No file chosen';
   });
 
   // ===== Table Rendering =====
